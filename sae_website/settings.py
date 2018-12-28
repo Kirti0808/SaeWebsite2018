@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'index',
+    'index.apps.IndexConfig',
     'contact',
     'crispy_forms',
     'announcements',
@@ -128,6 +128,6 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'sae_website/media') 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'sae_website/media')
 
 STATICFILES_DIRS = ( os.path.join('static'), )
