@@ -24,3 +24,11 @@ urlpatterns = [
     path('contact/', include('contact.urls')),
     path('announcements/', include('announcements.urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+#from django.conf.urls import include, url
+
+#urlpatterns = [
+#    path('index/', include('index.urls')),
+#]
+
+#]

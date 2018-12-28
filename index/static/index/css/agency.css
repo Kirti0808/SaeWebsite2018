@@ -307,16 +307,54 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  transition: .1s ease;
+  background-color: rgba(92,192,192,0.3);
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+ .overlay:hover {
+  opacity: 1;
+}
+.image {
+  width: 100%;
+  height: auto;
+}
+#abc {
+
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* When you move the mouse over the icon, change color */
+.fa-plus:hover {
+  color: #eee;
+}
+
 .portfolio-modal {
   padding-right: 0px !important;
 }
 
 .portfolio-modal .modal-dialog {
+  width: 60%;
+
   margin: 1rem;
   max-width: 100vw;
 }
 
 .portfolio-modal .modal-content {
+  height: 60%;
   padding: 100px 0;
   text-align: center;
 }
