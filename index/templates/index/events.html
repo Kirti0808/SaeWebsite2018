@@ -1,4 +1,91 @@
-{% extends "index/header.html" %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+	{% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SAE</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'index/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static 'index/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'index/css/agency.css' %}" rel="stylesheet">
+
+  </head>
+
+  <body id="home">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="/">Sae Logo</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#home">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#activities">Activities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#autopia">Autopia</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+	<br>
+
+	<!-- Footer -->
+
+
+	<!-- Bootstrap core JavaScript -->
+    <script src="{% static 'index/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'index/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'index/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'index/vendor/scrollreveal/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'index/vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'index/js/agency.min.js' %}"></script>
+
+  </body>
+
+</html>
+
 
 {% block content %}
 	{% load static %}
@@ -28,7 +115,7 @@
         </div>
 
           <div class="portfolio-caption">
-            <h4>TRANSMISSION</h4>
+            <h4 style="text-align:center;">TRANSMISSION</h4>
 
           </div>
         </div>
@@ -47,7 +134,7 @@
         </div>
 
           <div class="portfolio-caption">
-            <h4>BATTLE OF WATERLOO</h4>
+            <h4 style="text-align:center;">BATTLE OF WATERLOO</h4>
 
           </div>
         </div>
@@ -66,10 +153,16 @@
 				</div>
 
 					<div class="portfolio-caption">
-						<h4>JUNKYARD</h4>
+						<h4 style="text-align:center;">JUNKYARD</h4>
 
 					</div>
 				</div>
+				</div>
+				<div class="row">
+					<br />
+					<br />
+					</div>
+					<div class="row">
 				<div class="col-md-4 col-sm-6 portfolio-item">
 
 
@@ -84,11 +177,15 @@
 					</a>
 				</div>
 
+				<br />
+				<br />
+
 					<div class="portfolio-caption">
-						<h4>APOCALYPSE</h4>
+						<h4 style="text-align:center;">APOCALYPSE</h4>
 
 					</div>
 				</div>
+
 				<div class="col-md-4 col-sm-6 portfolio-item">
 
 
@@ -104,7 +201,7 @@
 				</div>
 
 					<div class="portfolio-caption">
-						<h4>ROYAL LEAGUE</h4>
+						<h4 style="text-align:center;">ROYAL LEAGUE</h4>
 
 					</div>
 				</div>
@@ -124,10 +221,16 @@
 				</div>
 
 					<div class="portfolio-caption">
-						<h4>ESCAPE THE MINOTAUR</h4>
+						<h4 style="text-align:center;">ESCAPE THE MINOTAUR</h4>
 
 					</div>
 				</div>
+				</div>
+				<div class="row">
+					<br />
+					<br />
+					</div>
+				<div class="row">
 
 				<div class="col-md-4 col-sm-6 portfolio-item">
 
@@ -144,7 +247,7 @@
 				</div>
 
 					<div class="portfolio-caption">
-						<h4>IMPROMPTUS</h4>
+						<h4 style="text-align:center;">IMPROMPTUS</h4>
 
 					</div>
 				</div>
@@ -163,9 +266,10 @@
 				</div>
 
 					<div class="portfolio-caption">
-						<h4>CONSILIO</h4>
+						<h4 style="text-align:center;">CONSILIO</h4>
 
 					</div>
+				</div>
 				</div>
 
 
@@ -180,7 +284,7 @@
 
 		<!-- Modal 1 -->
 		<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-dialog">
+			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="close-modal" data-dismiss="modal">
 						<div class="lr">
@@ -189,20 +293,24 @@
 					</div>
 					<div class="container">
 						<div class="row">
-							<div class="col-lg-8 mx-auto">
+
 								<div class="modal-body">
 									<!-- Project Details Go Here -->
 									<h2 class="text-uppercase">TRANSMISSION</h2>
-
+									<div class="row">
+									<div class="col-lg-6 mx-auto">
 									<img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae2.jpg' %}" alt="">
+									</div>
+									<div class="col-lg-4 mx-auto">
 									<p>“Transmission” presents you a series of challenging and mind-boggling tasks wherein your technical skills are put to test and questioned by experience. Leave no stone unturned in keeping your concepts clean and error-free cause that might just be your pitfall. Execute your knowledge and abilities to win over people.
-	</p>
+	</p></div>
+								</div>
 
 									<button class="btn btn-primary" data-dismiss="modal" type="button">
 										<i class="fas fa-times"></i>
 										Close </button>
 								</div>
-							</div>
+
 						</div>
 					</div>
 				</div>
@@ -211,7 +319,7 @@
 
 		<!-- Modal 2 -->
 		<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-dialog">
+			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="close-modal" data-dismiss="modal">
 						<div class="lr">
@@ -219,19 +327,22 @@
 						</div>
 					</div>
 					<div class="container">
-						<div class="row">
-							<div class="col-lg-8 mx-auto">
 								<div class="modal-body">
 									<!-- Project Details Go Here -->
 									<h2 class="text-uppercase">BATTLE OF WATERLOO</h2>
+									<div class="row">
+										<div class="col-lg-6 mx-auto">
 
 									<img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae3.jpg' %}" alt="">
+									</div>
+										<div class="col-lg-4 mx-auto">
 									<p>Wage war, overthrow the enemies in your own Pochinki, and conquer them by firing ammunition rounds with your hydraulic arms.</p>
-
+									</div>
+										</div>
 									<button class="btn btn-primary" data-dismiss="modal" type="button">
 										<i class="fas fa-times"></i>
 										Close</button>
-								</div>
+
 							</div>
 						</div>
 					</div>
@@ -241,7 +352,7 @@
 
 		<!-- Modal 3 -->
 		<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-dialog">
+			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="close-modal" data-dismiss="modal">
 						<div class="lr">
@@ -249,19 +360,24 @@
 						</div>
 					</div>
 					<div class="container">
-						<div class="row">
-							<div class="col-lg-8 mx-auto">
 								<div class="modal-body">
 									<!-- Project Details Go Here -->
 									<h2 class="text-uppercase">JUNKYARD</h2>
+									<div class="row">
+										<div class="col-lg-6 mx-auto">
 
-									<img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae4.jpg' %}" alt="">
+									<img class="img-fluid" src="{% static 'index/img/portfolio/sae4.jpg' %}" alt="">
+									</div>
+
+										<div class="col-lg-4 mx-auto">
+
 									<p>Don't let the junk go waste and let the society be more technology-surrounded. In Junkyard, gather your creative ideas and use them to make something useful out of the scrap and like a phoenix, let your innovation rise from ashes!</p>
-
+									</div>
+									</div>
 									<button class="btn btn-primary" data-dismiss="modal" type="button">
 										<i class="fas fa-times"></i>
 										Close </button>
-								</div>
+
 							</div>
 						</div>
 					</div>
@@ -271,7 +387,7 @@
 
 		<!-- Modal 4 -->
 		<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-dialog">
+			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="close-modal" data-dismiss="modal">
 						<div class="lr">
@@ -279,20 +395,25 @@
 						</div>
 					</div>
 					<div class="container">
-						<div class="row">
-							<div class="col-lg-8 mx-auto">
 								<div class="modal-body">
 									<!-- Project Details Go Here -->
 									<h2 class="text-uppercase">APOCALYPSE</h2>
+									<div class="row">
+										<div class="col-lg-6 mx-auto">
 
 									<img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae5.jpg' %}" alt="">
+									</div>
+									<div class="col-lg-4 mx-auto">
+
 									<p>Are you a someone who is interested in building robots? Does your robot have what it takes to survive any deadly obstacle?
 	Then come on down and take on the toughest obstacle course!</p>
+									</div>
+									</div>
 
 									<button class="btn btn-primary" data-dismiss="modal" type="button">
 										<i class="fas fa-times"></i>
 										Close </button>
-								</div>
+
 							</div>
 						</div>
 					</div>
@@ -302,7 +423,7 @@
 
 		<!-- Modal 5 -->
 		<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-dialog">
+			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="close-modal" data-dismiss="modal">
 						<div class="lr">
@@ -310,19 +431,24 @@
 						</div>
 					</div>
 					<div class="container">
-						<div class="row">
-							<div class="col-lg-8 mx-auto">
-								<div class="modal-body">
+							<div class="modal-body">
 									<!-- Project Details Go Here -->
 									<h2 class="text-uppercase">ROYAL LEAGUE</h2>
+									<div class="row">
+										<div class="col-lg-6 mx-auto">
+
 
 									<img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae6.jpg' %}" alt="">
-									<p>A time will come when the canons would conflict, explosions would break in the sky, the flames would climb higher and the chariots would stand face to face, breaking the forts of the opponents to stand out victorious. Defend your land, fight on the foreground, streets and hills but never surrender. </p>
+									</div>
+									<div class="col-lg-4 mx-auto">
 
+									<p>A time will come when the canons would conflict, explosions would break in the sky, the flames would climb higher and the chariots would stand face to face, breaking the forts of the opponents to stand out victorious. Defend your land, fight on the foreground, streets and hills but never surrender. </p>
+								</div>
+								</div>
 									<button class="btn btn-primary" data-dismiss="modal" type="button">
 										<i class="fas fa-times"></i>
 										Close</button>
-								</div>
+
 							</div>
 						</div>
 					</div>
@@ -332,7 +458,7 @@
 
 		<!-- Modal 6 -->
 		<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-dialog">
+			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="close-modal" data-dismiss="modal">
 						<div class="lr">
@@ -340,20 +466,25 @@
 						</div>
 					</div>
 					<div class="container">
-						<div class="row">
-							<div class="col-lg-8 mx-auto">
+
 								<div class="modal-body">
 									<!-- Project Details Go Here -->
 									<h2 class="text-uppercase">ESCAPE THE MINOTAUR</h2>
+									<div class="row">
+										<div class="col-lg-6 mx-auto">
 
-									<img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae7.jpg' %}" alt="">
+									<img class="img-thumbnail" src="{% static 'index/img/portfolio/sae7.jpg' %}" alt="">
+									</div>
+									<div class="col-lg-4 mx-auto">
+
 									<p>Do you think your bot is intelligent enough to follow lines, avoid obstacles, solve mazes and make it to the finish line?
 	"Escape the Minotaur" brings you an opportunity to put your bot to test through various levels of challenging tasks but most importantly, all by itself without any external control. So prepare your algorithm, calibrate your sensors and get ready to be enthralled!</p>
-
+									</div>
+									</div>
 									<button class="btn btn-primary" data-dismiss="modal" type="button">
 										<i class="fas fa-times"></i>
 										Close </button>
-								</div>
+
 							</div>
 						</div>
 					</div>
@@ -363,7 +494,7 @@
 
 		<!-- Modal 7 -->
 		<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-dialog">
+			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="close-modal" data-dismiss="modal">
 						<div class="lr">
@@ -371,19 +502,24 @@
 						</div>
 					</div>
 					<div class="container">
-						<div class="row">
-							<div class="col-lg-8 mx-auto">
+
 								<div class="modal-body">
 									<!-- Project Details Go Here -->
 									<h2 class="text-uppercase">IMPROMPTUS</h2>
+									<div class="row">
+										<div class="col-lg-6 mx-auto">
 
 									<img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae8.jpg' %}" alt="">
-									<p>Focus your inner entropy to bring out the Einstein in you. This Aavishkar we bring you Impromptus, a one-of-a-kind event which challenges your brain cells to be as random and spontaneous as possible.</p>
+									</div>
+									<div class="col-lg-4 mx-auto">
 
+									<p>Focus your inner entropy to bring out the Einstein in you. This Aavishkar we bring you Impromptus, a one-of-a-kind event which challenges your brain cells to be as random and spontaneous as possible.</p>
+									</div>
+									</div>
 									<button class="btn btn-primary" data-dismiss="modal" type="button">
 										<i class="fas fa-times"></i>
 										Close</button>
-								</div>
+
 							</div>
 						</div>
 					</div>
@@ -391,7 +527,7 @@
 			</div>
 		</div>
 		<div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-dialog">
+			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="close-modal" data-dismiss="modal">
 						<div class="lr">
@@ -399,19 +535,26 @@
 						</div>
 					</div>
 					<div class="container">
-						<div class="row">
-							<div class="col-lg-8 mx-auto">
+
 								<div class="modal-body">
 									<!-- Project Details Go Here -->
 									<h2 class="text-uppercase">CONSILIO</h2>
+									<div class="row">
+										<div class="col-lg-6 mx-auto">
 
 									<img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae9.jpg' %}" alt="">
+									</div>
+									<div class="col-lg-4 mx-auto">
+
+
 									<p>Brainstorm, ideate, design, parametrize and create your most extraordinary creation.
 	Consilio is a must try on-spot event for awakening the engineer in you. </p>
+									</div>
+									</div>
 									<button class="btn btn-primary" data-dismiss="modal" type="button">
 										<i class="fas fa-times"></i>
 										Close</button>
-								</div>
+
 							</div>
 						</div>
 					</div>
