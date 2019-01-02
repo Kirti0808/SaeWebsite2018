@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'index.apps.IndexConfig',
     'contact',
+    'autopia',
     'crispy_forms',
     'announcements',
     'django.contrib.admin',
