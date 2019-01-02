@@ -9,10 +9,15 @@
 				<div class="intro-lead-in">SOCIETY OF AUTMOTIVE ENGINEERS</div>
 				<div class="intro-heading text-uppercase" style="font-size:1.7em;">NIT DURGAPUR'S COLLEGIATE CHAPTER</div>
 
+				<div class="col-lg-8 mx-auto text-center">
+					<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">Who are we?</a>
+				</div>
 			</div>
 		</div>
 	</header>
-	<!--Home-->
+	
+	
+	<!--About-->
 	<section id="about">
 		<div class="container">
 			<div class="row">
@@ -24,13 +29,7 @@
 We organize a number of innovative events, workshops and lectures round the year and a competitive place where the sharpest minds battle in the quest to achieve disctinction. SAE along with MNTC and GLUG organises Aavishkar - The TechFest which is the official technical fest of NIT Durgapur. SAE NIT Durgapur also publishes its annual magazine called Autopia for automobile enthusiasts to know about latest technologies at one place. BAJA SAE is a part of SAE NIT Durgapur which takes part in BAJA competition organised by SAE India. They represent NIT Durgapur at this national level competition under the team name NDORS.</p>
 			</div>
 
-
-
-
-
-
-	<!-- About -->
-	<section id="about">
+		<br>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
@@ -161,9 +160,11 @@ We organize a number of innovative events, workshops and lectures round the year
 			</div>
 		</div>
 	</section>
-	<!-- Services -->
-
-		<div class="container" id="activities">
+	
+	
+	<!-- Activities -->
+	<section class="bg-light" id="activities">
+		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<h2 class="section-heading text-uppercase">ACTIVITIES</h2>
@@ -229,7 +230,7 @@ We organize a number of innovative events, workshops and lectures round the year
 					<img class="img-fluid" src="{% static 'index/img/portfolio/sae4.jpg' %}"  height="4%" alt="">
 					</span>
 
-					<h4 class="service-heading"><a href="{% url 'events1' %}">EVENTS</a></h4>
+					<h4 class="service-heading"><a href="/events">EVENTS</a></h4>
 
 				</div>
 
@@ -242,13 +243,13 @@ We organize a number of innovative events, workshops and lectures round the year
 
 
 
-	<!-- Services -->
+	<!-- Autopia -->
 	<section id="autopia">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<h2 class="section-heading text-uppercase">Autopia</h2>
-					<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+					<h3 class="section-subheading text-muted">Our official magazine</h3>
 				</div>
 			</div>
 			<div class="row text-center">
@@ -257,7 +258,7 @@ We organize a number of innovative events, workshops and lectures round the year
 						<i class="fas fa-circle fa-stack-2x text-primary"></i>
 						<i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
 					</span>
-					<h4 class="service-heading">E-Commerce</h4>
+					<h4 class="service-heading">About</h4>
 					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
 				</div>
 				<div class="col-md-4">
@@ -265,7 +266,7 @@ We organize a number of innovative events, workshops and lectures round the year
 						<i class="fas fa-circle fa-stack-2x text-primary"></i>
 						<i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
 					</span>
-					<h4 class="service-heading">Responsive Design</h4>
+					<h4 class="service-heading">Get your digital copy</h4>
 					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
 				</div>
 				<div class="col-md-4">
@@ -273,7 +274,7 @@ We organize a number of innovative events, workshops and lectures round the year
 						<i class="fas fa-circle fa-stack-2x text-primary"></i>
 						<i class="fas fa-lock fa-stack-1x fa-inverse"></i>
 					</span>
-					<h4 class="service-heading">Web Security</h4>
+					<h4 class="service-heading"><a href="/autopia">Submit your article</a></h4>
 					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
 </div>
 </section>
@@ -374,7 +375,7 @@ We organize a number of innovative events, workshops and lectures round the year
 		</div>
 	</section>
 
-	<!-- Clients -->
+	<!--Clients
 	<section class="py-5">
 		<div class="container">
 			<div class="row">
@@ -481,38 +482,7 @@ We organize a number of innovative events, workshops and lectures round the year
 		</div>
 	</section>
 
-	<!-- Footer -->
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<span class="copyright">Copyright &copy; SAE NIT Durgapur</span>
-				</div>
-				<div class="col-md-4">
-					<ul class="list-inline social-buttons">
-						<li class="list-inline-item">
-							<a href="#">
-								<i class="fab fa-twitter"></i>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a href="#">
-								<i class="fab fa-facebook-f"></i>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a href="#">
-								<i class="fab fa-linkedin-in"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
-
-			</div>
-
-		</div>
-		</footer>
-
+	
 	<!-- Portfolio Modals -->
 	<!--ABOUT MODALS-->
 	<div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">

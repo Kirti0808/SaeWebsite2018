@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('index.urls')),
     path('contact/', include('contact.urls')),
+    path('autopia/', include('autopia.urls')),
     path('announcements/', include('announcements.urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
