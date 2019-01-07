@@ -14,7 +14,7 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: black;
 }
 
 a:hover {
@@ -152,7 +152,7 @@ img::-moz-selection {
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
+  /*  background-color: transparent; */
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -611,6 +611,7 @@ portfolio-modal .modal-dialog {
     padding: 0 100px 20px 20px;
   }
 }
+
 
 .team-member {
   margin-bottom: 50px;
