@@ -2,24 +2,33 @@
 
 {% block content %}
 	{% load static %}
-
+<style>
+		@media (min-width: 992px) {
+			#mainNav {
+			  background-color: transparent;
+			}
+		}
+</style>
 	<div class="masthead" id="home">
 		<div id="carousel" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="{% static 'index/img/1.jpg' %}" alt="First slide">
+      <img class="d-block w-100" src="{% static 'index/img/1.jpg' %}" height="1000px" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="{% static 'index/img/2.jpg' %}" alt="Second slide">
+      <img class="d-block  w-100" src="{% static 'index/img/2.jpg' %}"  alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="{% static 'index/img/3.jpg' %}" alt="Third slide">
+      <img class="d-block  w-100" src="{% static 'index/img/3.jpg' %}" height="1000px" alt="Third slide">
     </div>
 		<div class="carousel-item">
-      <img class="d-block w-100" src="{% static 'index/img/4.jpg' %}" alt="Third slide">
+      <img class="d-block  w-100" src="{% static 'index/img/4.jpg' %}" height="1000px" alt="Fourth slide">
     </div>
 		<div class="carousel-item">
-      <img class="d-block w-100" src="{% static 'index/img/5.jpg' %}" alt="Third slide">
+      <img class="d-block w-100" src="{% static 'index/img/5.jpg' %}" height="1000px" alt="Fifth slide">
+    </div>
+		<div class="carousel-item">
+      <img class="d-block w-100" src="{% static 'index/img/6.jpg' %}" height="1000px" alt="Fifth slide">
     </div>
   </div>
 </div>
@@ -42,86 +51,66 @@
 						<h2 class="section-heading text-uppercase">ABOUT US</h2>
 				</div>
 			</div>
-			<p class="text-muted"><b>SAE India collegiate chapter of NIT Durgapur</b> was conceived in 2007 with an idea to integrate the students of the college into international fabric of automobile engineering. Presently 200 students are enjoying the benefits of SAE India membership.
-We organize a number of innovative events, workshops and lectures round the year and a competitive place where the sharpest minds battle in the quest to achieve disctinction. SAE along with MNTC and GLUG organises Aavishkar - The TechFest which is the official technical fest of NIT Durgapur. SAE NIT Durgapur also publishes its annual magazine called Autopia for automobile enthusiasts to know about latest technologies at one place. BAJA SAE is a part of SAE NIT Durgapur which takes part in BAJA competition organised by SAE India. They represent NIT Durgapur at this national level competition under the team name NDORS.</p>
+			<p class="text-muted"><b>SAEINDIA</b> is India's leading resource for mobility technology. It is a strategic alliance partner of SAE International registered in India as an Indian nonprofit engineering and scientific society dedicated to the advancement of mobility industry in India.
+			<br><b>SAE India collegiate chapter of NIT Durgapur</b> was conceived in 2007 with an idea to integrate the students of the college into international fabric of automobile engineering. Presently 200 students are enjoying the benefits of SAE India membership.
+We organize a number of innovative events, workshops and lectures round the year and a competitive place where the sharpest minds battle in the quest to achieve disctinction. SAE along with MNTC and GLUG organises <b>Aavishkar - The TechFest</b> which is the official technical fest of NIT Durgapur. SAE NIT Durgapur also publishes its annual magazine called <b>Autopia</b> for automobile enthusiasts to know about latest technologies at one place. <b>BAJA SAE</b> is a part of SAE NIT Durgapur which takes part in BAJA competition organised by SAE India. They represent NIT Durgapur at this national level competition under the team name NDORS.</p>
 			</div>
 
 		<br>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<h2 class="section-heading text-uppercase">SAE INDIA MEMBERSHIP BENEFITS:</h2>
-					<h3 class="section-subheading text-muted">Be a part of the SAE family by becoming a member and enjoy the following benefits:</h3>
+					<h2 class="section-subheading" style="text-align:left">SAE India Membership:</h2>
+					<p class="text-muted" style="text-align:left">SAEINDIA is one of the few professional engineering societies whose membership represents practically every engineering and scientific discipline. Its members combine their specialized abilities to further advance the research, development, design, manufacture and utilization of vehicles which operate on land and water and in air and space. Be a part of the SAE family by becoming a member and enjoy the following benefits:</h3>
 				</div>
 			</div>
+			<ul>
+				<li>	<p class="text-muted">Members receive free registration at SAEINDIA's lecture meetings and exhibits. This unique benefit puts the members in touch with other professional engineers and suppliers who determine the future of the expanding mobility industry worldwide.</p>
+					</li>
+					<li>
+						<p class="text-muted">Members can purchase SAEINDIA and SAE International technical papers and publications at member discount prices.</p>
+						</li>
+						<li>
+							<p class="text-muted">Access vital high-tech mobility information through renewal registration fee for attending SAEINDIA National and International Congress.</p>
+						</li>
+					</div>
+
+			</section>
+
+
+			<!-- Activities -->
+			<section class="bg-light" id="activities">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 text-center">
+							<h2 class="section-heading text-uppercase">ACTIVITIES</h2>
+
+							<h3 class="section-subheading text-muted">SAE NIT DURGAPUR brings to you:</h3>
+						</div>
+					</div>
 
 			<div class="row">
 				<div class="col-lg-12">
 					<ul class="timeline">
 						<li>
 							<div class="timeline-image">
-
-
-							<!--	<img class="rounded-circle img-fluid" src="{% static 'index/img/about/sae1.jpg' %}" alt=""> -->
-
-							</div>
+                      </div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 
 								<!--	<h4 class="subheading">Our Humble Beginnings</h4> -->
+
+
 								</div>
 								<div class="timeline-body">
-									<p class="text-muted">SAEINDIA is one of the few professional engineering societies whose membership represents practically every engineering and scientific discipline. Its members combine their specialized abilities to further advance the research, development, design, manufacture and utilization of vehicles which operate on land and water and in air and space.</p>
+									<br/>
+
+									<h2><a class="portfolio-link" data-toggle="modal" href="#portfolioModal11"> AAVISHKAR </a></h2>
+									<p class="text-muted"> Know more about the official techinal fest of NIT Durgapur</p>
 
 								</div>
 							</div>
 						</li>
-					<!--	<li class="timeline-inverted">
-							<div class="timeline-image">
-
-								<img class="rounded-circle img-fluid" src="{% static 'index/img/about/2.jpg' %}" alt="">
-							</div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-
-									<h4 class="subheading">Membership Benefits</h4>
-								</div>
-								<div class="timeline-body">
-									<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-			</div>
-							</div>
-						</li>
-						<li>
-
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-
-									<h4 class="subheading">Sae-NIT Durgapur</h4>
-								</div>
-								<div class="timeline-body">
-									<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-								</div>
-							</div>
-						</li>-->
-						<!--<li class="timeline-inverted">
-							<div class="timeline-image">
-								<img class="rounded-circle img-fluid" src="{% static 'index/img/about/4.jpg' %}" alt="">
-							</div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h4>July 2014</h4>
-									<h4 class="subheading">Phase Two Expansion</h4>
-								</div>
-								<div class="timeline-body">
-									<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted">
-							<div class="timeline-image">
-								<h4>Be A Part
-									<br>Of Our
-									<br>Club!</h4>-->
 
 
 
@@ -131,7 +120,12 @@ We organize a number of innovative events, workshops and lectures round the year
 								<div class="timeline-panel">
 
 									<div class="timeline-body">
-										<p class="text-muted">Members receive free registration at SAEINDIA's lecture meetings and exhibits. This unique benefit puts the members in touch with other professional engineers and suppliers who determine the future of the expanding mobility industry worldwide.</p>
+										<br>
+
+										<h2><a class="portfolio-link" data-toggle="modal" href="#portfolioModal12"> BAJA SAE </a></h2>
+										<p class="text-muted"> Get a brief about the achievements of NDORS </p>
+
+
 									</div>
 								</div>
 							</li>
@@ -142,12 +136,14 @@ We organize a number of innovative events, workshops and lectures round the year
 								<div class="timeline-panel">
 
 									<div class="timeline-body">
-										<p class="text-muted">Members can purchase SAEINDIA and SAE International technical papers and publications at member discount prices.</p>
+										<br>
+										<h2><a href="/events"> EVENTS </a></h2>
+										<p class="text-muted"> Get the details of events and workshops organiseed by SAE NIT Durgapur</p>
 									</div>
 								</div>
 							</li>
 
-						<li class="timeline-inverted">
+						<!--<li class="timeline-inverted">
 							<div class="timeline-image">
 
 							</div>
@@ -156,15 +152,16 @@ We organize a number of innovative events, workshops and lectures round the year
 
 								</div>
 								<div class="timeline-body">
-									<p class="text-muted">Access vital high-tech mobility information through renewal registration fee for attending SAEINDIA National and International Congress.</p>
-								</div>
+									<br />
+									<h2><a href="/announcements">GET EVENT UPDATES</a></h2>
+									</div>
 							</div>
-						</li>
+						</li>-->
 						<li class="timeline-inverted">
 							<div class="timeline-image">
-								<h4>Be Part
-									<br>Of Our
-									<br>Society!</h4>
+								<h4><a style="color:white" href="/announcements">Get
+									<br>Event
+									<br>Updates!</a></h4>
 
 							</div>
 						</li>
@@ -172,88 +169,6 @@ We organize a number of innovative events, workshops and lectures round the year
 				</div>
 			</div>
 			<br>
-			<div class="col-lg-8 mx-auto text-center">
-				<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#activities">What we do?</a>
-			</div>
-		</div>
-	</section>
-
-
-	<!-- Activities -->
-	<section class="bg-light" id="activities">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h2 class="section-heading text-uppercase">ACTIVITIES</h2>
-
-					<h3 class="section-subheading text-muted">SAE NIT DURGAPUR brings to you:</h3>
-				</div>
-			</div>
-			<div class="row text-center">
-				<div class="col-md-4  portfolio-item">
-					<br />
-
-						<img class="img-fluid" src="{% static 'index/img/portfolio/aavishkar.png' %}"   alt="" >
-						<br />
-
-					<div class="overlay">
-					<a class="portfolio-link" data-toggle="modal" href="#portfolioModal11" id="abc">
-
-
-
-						<i class="fas fa-plus fa-3x"></i>
-
-					</a>
-				</div>
-
-					<div class="portfolio-caption">
-						<h4 class="text-primary">AAVISHKAR</h4>
-
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 portfolio-item">
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-
-					<img class="img-fluid" src="{% static 'index/img/portfolio/baja.jpg' %}" height="13%" alt="" >
-					<br />
-					<br />
-				<div class="overlay">
-				<a class="portfolio-link" data-toggle="modal" href="#portfolioModal12" id="abc">
-
-
-
-					<i class="fas fa-plus fa-3x"></i>
-
-				</a>
-			</div>
-
-
-				<div class="portfolio-caption">
-					<h4 class="service-heading"><a href="https://www.facebook.com/NDORSNITD/?epa=SEARCH_BOX">BAJA SAE</a></h4>
-
-				</div>
-			</div>
-				<div class="col-md-4">
-					<br />
-					<br />	<br />
-						<br />
-						<br />
-					<span>
-					<img class="img-fluid" src="{% static 'index/img/portfolio/sae4.jpg' %}"  height="4%" alt="">
-					</span>
-
-					<h4 class="service-heading"><a href="/events">EVENTS</a></h4>
-
-				</div>
-
-			</div>
-
-		</div>
 
 	</section>
 
@@ -276,15 +191,15 @@ We organize a number of innovative events, workshops and lectures round the year
 						<i class="fas fa-book-open fa-stack-1x fa-inverse"></i>
 					</span>
 					<h4 class="service-heading">About</h4>
-					<p class="text-muted">The official automotive magazine of the club is circulated among the students, their parents, teachers, industrialists and so on. The magazine is a must have for all automotive enthusiats as it contains articles related to latest techonological advancements and awesome stuff related to automobile industry.</p>
+					<p class="text-muted">It is the official automotive magazine of the club and is circulated among the students, their parents, teachers, industrialists and so on. It contains articles related to latest techonological advancements in the automobile industry.</p>
 				</div>
 				<div class="col-md-4">
 					<span class="fa-stack fa-4x">
 						<i class="fas fa-circle fa-stack-2x text-primary"></i>
 						<i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
 					</span>
-					<h4 class="service-heading">Get your digital copy</h4>
-					<p class="text-muted">To read the magazine online</p>
+					<h4 class="service-heading"><a href="#autopia">Get your digital copy</a></h4>
+					<p class="text-muted">Get your own copy of Autopia and enrich yourself with the knowledge of new technology being used for mobility. </p>
 				</div>
 				<div class="col-md-4">
 					<span class="fa-stack fa-4x">
@@ -292,7 +207,7 @@ We organize a number of innovative events, workshops and lectures round the year
 						<i class="fas fa-edit fa-stack-1x fa-inverse"></i>
 					</span>
 					<h4 class="service-heading"><a href="/autopia">Submit your article</a></h4>
-					<p class="text-muted">Send us your articles here!</p>
+					<p class="text-muted">Send us your articles here and share your knowledge with the rest of the world! </p>
 </div>
 </section>
 
@@ -480,7 +395,7 @@ We organize a number of innovative events, workshops and lectures round the year
 		<br>
 		<br>
 		<div class="col-lg-8 mx-auto text-center">
-			<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/contact">Leave a message!</a>
+			<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" style="color:white" href="/contact">Leave a message!</a>
 
 		<div class="container">
 			<div class="row">
