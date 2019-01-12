@@ -3,21 +3,29 @@
 {% block content %}
 
 	{% load static %}
-	
+
 	<br>
 	<br>
 	<br>
 	<br>
 	<br>
-	
+
 	<!-- Page Content -->
     <div class="container">
+			<div class="container">
+				<div>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				</div>
 
       <!--<div class="row">
 
         <!--<header class="masthead text-center text-white d-flex">-->
       <div class="container my-auto">
-        <div class="row"> 
+        <div class="row">
           <div class="col-lg-10 mx-auto">
             <h1 class="text-uppercase">
               <strong><center>Announcements</center></strong>
@@ -32,9 +40,9 @@
         </div>
       </div>
          <!--</header>-->
-		  
+
 		  {% for post in posts %}
-		  
+
 		  <!-- Blog Post -->
           <div class="card mb-4">
             <!--<img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">-->
@@ -46,14 +54,14 @@
 			  <center><img src={{post.image.url}} width="240"/></center>
 			  <br>
 			  {% endif %}
-			  
+
               <!--<a href="#" class="btn btn-primary">Read More &rarr;</a>-->
             </div>
             <div class="card-footer text-muted">
               Posted on {{post.date|date:"Y-m-d"}}
             </div>
           </div>
-		  
+
 		  {% endfor %}
 
 		  <!-- Pagination -->
@@ -64,7 +72,7 @@
 				<a class="btn btn-outline-info mb-4" href="?page=1">First</a>
 				<a class="btn btn-outline-info mb-4" href="?page={{posts.previous_page_number}}">Previous</a>
 			{% endif %}
-				
+
 			{% for num in posts.paginator.page_range %}
 				{% if posts.number == num %}
 				 <span class="current">
@@ -74,12 +82,12 @@
 				  <a class="btn btn-outline-info mb-4" href="?page={{num}}">{{num}}</a>
 				{% endif %}
 			{% endfor %}
-				
+
 			{% if posts.has_next %}
 				<a class="btn btn-outline-info mb-4" href="?page={{posts.next_page_number}}">Next</a>
 				<a class="btn btn-outline-info mb-4" href="?page={{posts.paginator.num_pages}}">Last</a>
 			{% endif %}
-				
+
 		  </span>
 		</div>
           <!--<ul class="pagination justify-content-center mb-4">
@@ -96,19 +104,19 @@
       <!-- /.row
 	</div>
     <!-- /.container -->
-	
+
 	<br>
-	
-    
+
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="{% static 'announcements/vendor/jquery/jquery.min.js' %}"></script>
     <script src="{% static 'announcements/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-	
+
 	<!--<img src="{% static 'announcements/img/bg.jpg' %}" style="max-width: 100%; height: auto;" />
 	{% for post in object_list %}
 		<h5>{{post.date|date:"Y-m-d"}}</h5>
 		<h4><a href="/announcements/{{post.id}}"> {{post.title}} </a> </h4>
 	{% endfor %}-->
-	
+
 {% endblock %}
