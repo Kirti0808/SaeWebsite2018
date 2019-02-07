@@ -26,7 +26,7 @@ SECRET_KEY = 'oxa#lxae&vh#02b_#2&s9(&uw)xlxy_#b8+geknu0k&2oqc#co'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['saewebsite.herokuapp.com']
 
 
 # Application definition
