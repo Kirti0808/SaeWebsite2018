@@ -22,7 +22,105 @@
 
     <!-- Custom styles for this template -->
     <link href="{% static 'index/css/agency.css' %}" rel="stylesheet">
+<style>
 
+     @media (min-width: 992px) {
+			#mainNav {
+			  background-color: transparent;
+			}
+		}
+
+     @media screen and (min-width:250px) and (max-width:485px)
+    {
+        #homeimg
+        {
+            height: 400px;
+            padding-top: 117px;
+        }
+
+        #def
+         {
+             height: 225px;
+             width: 350px;
+         }
+
+    }
+
+     @media screen and (min-width:486px) and (max-width:770px)
+    {
+        #homeimg
+        {
+            height: 625px;
+            padding-top: 120px;
+            padding-left: 35px;
+        }
+
+        #def
+         {
+             height: 130px;
+             width: 225px;
+         }
+    }
+
+    @media (min-width: 777px)
+     {
+      .navbar
+       {
+         height: 75px;
+       }
+      #logimg
+       {
+         margin-left: -25px;
+       }
+     #mainNav
+       {
+         background-color: #212529;
+       }
+     #homeimg
+       {
+         height: 717px;
+       }
+     #def
+         {
+             height: 190px;
+             width: 300px;
+         }
+     }
+
+    /*@media screen and (min-width:250px) and (max-width:500px)
+    {
+        #homeimg
+        {
+            height: 400px;
+            padding-top: 117px;
+        }
+    }
+   @media screen and (min-width:510px)
+    {
+        #homeimg
+        {
+            height: 717px;
+        }
+         #mainNav
+         {
+             background-color: #212529;
+         }
+    }
+      @media (min-width: 600px)
+          {
+          .navbar
+          {
+              height: 75px;
+          }
+              #logimg
+              {
+                  margin-left: -100px;
+              }
+          }
+    */
+
+
+      </style>
   </head>
 
   <body id="home">
@@ -30,7 +128,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="/"><img src="{% static 'index/img/saelogo.png' %}" width="90px" height="70px" alt="saelogo" /></a>
+        <a class="navbar-brand js-scroll-trigger" href="/"><img src="{% static 'index/img/saelogo.png' %}" width="110px" height="90px" alt="saelogo" id="logimg" /></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -100,61 +198,50 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
-      <div class="hovereffect">
-        <img class="img-fluid" src="{% static 'index/img/portfolio/sae2.jpg' %}"  id="def" alt="">
-        <div class="overlay">
-           <h2>TRANSMISSION</h2>
-           <a class="info"  data-toggle="modal" href="#portfolioModal1">
-              <i class="fas fa-plus fa-3x"></i>
-           </a>
-        </div>
-        <br />
-        <h4 style="text-align:center;">TRANSMISSION</h4>
+   <div class="row">
 
-      </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+              <div class="hovereffect">
+                <img class="img-fluid" src="{% static 'index/img/portfolio/sae2.jpg' %}"  id="def" alt="">
+                <div class="overlay">
+                   <h2>TRANSMISSION</h2>
+                   <a class="info"  data-toggle="modal" href="#portfolioModal1">
+                      <i class="fas fa-plus fa-3x"></i>
+                   </a>
+                </div>
+                <br />
+                <h4 style="text-align:center;">TRANSMISSION</h4>
+              </div>
+              </div>
 
+                <div class="col-md-4 col-sm-6 portfolio-item">
+            <div class="hovereffect">
+                <img  src="{% static 'index/img/portfolio/sae3.jpg' %}" id="def" alt="">
+                <div class="overlay">
+                   <h2>BATTLE OF WATERLOO</h2>
+                   <a class="info"  data-toggle="modal" href="#portfolioModal2">
+                      <i class="fas fa-plus fa-3x"></i>
+                   </a>
+                </div>
+                <br />
+                <h4 style="text-align:center;">BATTLE OF WATERLOO</h4>
+                </div>
+              </div>
 
-
-      </div>
-
-        <div class="col-md-4 col-sm-6 portfolio-item">
-    <div class="hovereffect">
-        <img  src="{% static 'index/img/portfolio/sae3.jpg' %}" height="190px" width="300px"  id="def" alt="">
-        <div class="overlay">
-           <h2>BATTLE OF WATERLOO</h2>
-           <a class="info"  data-toggle="modal" href="#portfolioModal2">
-              <i class="fas fa-plus fa-3x"></i>
-           </a>
-        </div>
-        <br />
-        <h4 style="text-align:center;">BATTLE OF WATERLOO</h4>
-
-    </div>
-
-
-
+                <div class="col-md-4 col-sm-6 portfolio-item">
+            <div class="hovereffect">
+                <img class="img-fluid" src="{% static 'index/img/portfolio/sae4.jpg' %}"  id="def" alt="">
+                <div class="overlay">
+                   <h2>JUNKYARD</h2>
+                   <a class="info"  data-toggle="modal" href="#portfolioModal3">
+                      <i class="fas fa-plus fa-3x"></i>
+                   </a>
+                </div>
+                <br />
+                <h4 style="text-align:center;">JUNKYARD</h4>
+                </div>
+              </div>
   </div>
-
-        <div class="col-md-4 col-sm-6 portfolio-item">
-    <div class="hovereffect">
-        <img class="img-fluid" src="{% static 'index/img/portfolio/sae4.jpg' %}"  id="def" alt="">
-        <div class="overlay">
-           <h2>JUNKYARD</h2>
-           <a class="info"  data-toggle="modal" href="#portfolioModal3">
-              <i class="fas fa-plus fa-3x"></i>
-           </a>
-        </div>
-        <br />
-        <h4 style="text-align:center;">JUNKYARD</h4>
-
-    </div>
-
-
-
-  </div>
-				</div>
 				<div class="row">
 					<br />
 					<br />
@@ -162,7 +249,7 @@
 					<div class="row">
             <div class="col-md-4 col-sm-6 portfolio-item">
         <div class="hovereffect">
-            <img  src="{% static 'index/img/portfolio/sae5.jpg' %}" height="190px" width="300px" id="def" alt="">
+            <img  src="{% static 'index/img/portfolio/sae5.jpg' %}" id="def" alt="">
             <div class="overlay">
                <h2>APOCALYPSE</h2>
                <a class="info"  data-toggle="modal" href="#portfolioModal4">
