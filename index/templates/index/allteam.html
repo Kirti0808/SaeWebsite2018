@@ -41,6 +41,12 @@
       #baja{
         display: none;
       }
+      .btn:active {
+  background-color: red;
+  color: blue;
+}
+
+
         </style>
         <script>
         function myFunction1() {
@@ -49,6 +55,11 @@
         document.getElementById("snr1").style.display = "none";
         document.getElementById("jnr").style.display = "none";
           document.getElementById("baja").style.display = "none";
+          document.getElementById("a").style.backgroundColor = "lightyellow";
+          document.getElementById("b").style.backgroundColor = "#fec810";
+          document.getElementById("c").style.backgroundColor = "#fec810";
+          document.getElementById("d").style.backgroundColor = "#fec810";
+
         }
         function myFunction2() {
           document.getElementById("fnl").style.display = "none";
@@ -56,6 +67,11 @@
         document.getElementById("snr1").style.display = "none";
         document.getElementById("jnr").style.display = "none";
           document.getElementById("baja").style.display = "none";
+          document.getElementById("a").style.backgroundColor = "#fec810";
+          document.getElementById("b").style.backgroundColor = "lightyellow";
+          document.getElementById("c").style.backgroundColor = "#fec810";
+          document.getElementById("d").style.backgroundColor = "#fec810";
+
         }
         function myFunction3() {
           document.getElementById("fnl").style.display = "none";
@@ -63,6 +79,11 @@
         document.getElementById("jnr1").style.display = "none";
         document.getElementById("jnr").style.display = "block";
           document.getElementById("baja").style.display = "none";
+            document.getElementById("a").style.backgroundColor = "#fec810";
+              document.getElementById("b").style.backgroundColor = "#fec810";
+              document.getElementById("c").style.backgroundColor = "lightyellow";
+              document.getElementById("d").style.backgroundColor = "#fec810";
+
         }
         function myFunction4() {
           document.getElementById("fnl").style.display = "none";
@@ -70,6 +91,10 @@
         document.getElementById("baja1").style.display = "none";
         document.getElementById("jnr").style.display = "none";
           document.getElementById("baja").style.display = "block";
+          document.getElementById("a").style.backgroundColor = "#fec810";
+            document.getElementById("b").style.backgroundColor = "#fec810";
+            document.getElementById("c").style.backgroundColor = "#fec810";
+            document.getElementById("d").style.backgroundColor = "lightyellow";
         }
         </script>
 
@@ -122,13 +147,13 @@
       <!--  <div class="btn-toolbar" role="group" aria-label="Basic example" > -->
       <div class="btn-toolbar">
 
-  <a  class="btn btn-primary btn-md"  onclick="myFunction1()">FINAL YEARS</a>
+  <a  class="btn btn-primary btn-md"  onclick="myFunction1()" id="a" class="btn" style="padding: 20px; margin:20px;  ">FINAL YEARS</a>
 
 
-  <a  class="btn btn-primary btn-md" onclick="myFunction2()">SENIOR FEST COORDINATORS</a>
+  <a  class="btn btn-primary btn-md" onclick="myFunction2()" id="b" style="padding: 20px; margin:20px;">SENIOR FEST COORDINATORS</a>
 
-  <a  class="btn btn-primary btn-md" onclick="myFunction3()">JUNIOR FEST COORDINATORS</a>
-  <a  class="btn btn-primary btn-md" onclick="myFunction4()">BAJA MEMBERS</a>
+  <a  class="btn btn-primary btn-md" onclick="myFunction3()" id="c" style="padding: 20px; margin:20px;">JUNIOR FEST COORDINATORS</a>
+  <a  class="btn btn-primary btn-md" onclick="myFunction4()" id="d" style="padding: 20px; margin:20px;">BAJA MEMBERS</a>
 
 </div>
 
