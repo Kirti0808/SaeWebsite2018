@@ -1,1 +1,0 @@
-web: gunicorn sae_website.wsgi
