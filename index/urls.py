@@ -6,7 +6,6 @@ urlpatterns = [
     path('events',views.events,name='events'),
 
     path('allteam/',views.allteam,name='allteam'),
-   
 
     ]
 #from django.conf.urls import url
