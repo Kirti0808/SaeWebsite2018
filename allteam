@@ -178,6 +178,7 @@
 
   <a  class="btn btn-primary btn-md" onclick="myFunction3()" id="c" style="padding: 20px; margin:20px;">WEB DEVELOPMENT</a>
 
+  <a  class="btn btn-primary btn-md" onclick="myFunction5()" id="e" style="padding: 20px; margin:20px;">GRAPHIC DESIGN</a>
   <a  class="btn btn-primary btn-md" onclick="myFunction5()" id="e" style="padding: 20px; margin:20px;">GRAPHIC</a>
 
   <a  class="btn btn-primary btn-md" onclick="myFunction4()" id="d" style="padding: 20px; margin:20px;">BAJA MEMBERS</a>
